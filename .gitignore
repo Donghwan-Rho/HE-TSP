@@ -1,0 +1,12 @@
+results/
+
+__pycache__/
+*.pyc
+
+trash/
+
+llama2-7b-hf_sorted_idx_cos_sim.json
+
+original_tokens_LLaMA2-7B-hf_cos_sim.txt
+
+sorted_tokens_LLaMA2-7B-hf_cos_sim.txt
