@@ -62,4 +62,4 @@ python text_generation.py \
     --text_seed 42
 ```
 
-To compute the corruption score ratio in the paper, you need `GPT-4` API in `utils/gpt4_corruption_score.py`.
+To compute the corruption score ratio in the paper, you need a `GPT-4` API in `utils/gpt4_corruption_score.py`.
