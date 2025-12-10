@@ -18,7 +18,7 @@ After you run this code, the following files are created.
 * original_tokens_LLaMA2-7B-hf_cos_sim.txt
 * sorted_tokens_LLaMA2-7B-hf_cos_sim.txt
 
-Comparing two .txt files, you can see the original and reordered tokens.
+Comparing two `.txt` files, you can see the original and reordered tokens.
 
 ## 2. Fine-tuning (Optional)
 
