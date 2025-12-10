@@ -1,7 +1,7 @@
 # Encryption-friendly LLM Architecture
 This is the repository of our paper [Traveling Salesman-Based Token Ordering Improves Stability in Homomorphically Encrypted Language Models](https://arxiv.org/pdf/2510.12343).
 
-First authors: **Donghwan Rho**(Seoul National University) and **Sieun Seo** (Ewha Womans University) 
+First authors: **Donghwan Rho** (Seoul National University) and **Sieun Seo** (Ewha Womans University) 
 
 Our experiments were run using the `Llama2-7b-hf` model. You can our codes with other models with appropriate modifications.
 
