@@ -100,7 +100,6 @@ def softmax64(logits: torch.Tensor) -> torch.Tensor:
 def probs_for_prompt(the_model, prompt: str, perm: torch.Tensor | None = None):
     inputs = tokenizer(prompt, return_tensors="pt").to(device)
     with torch.no_grad():
-        # logits를 바로 float64로 캐스팅
         logits = the_model(**inputs).logits[:, -1, :].squeeze().to(torch.float64)  # (V,)
     probs = softmax64(logits)  # float64 softmax
     if perm is not None:

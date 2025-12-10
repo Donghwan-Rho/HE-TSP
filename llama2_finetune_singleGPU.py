@@ -40,10 +40,9 @@ def tokenize_function(examples):
     return tokens
 
 parser = argparse.ArgumentParser(description="Training script for a machine learning model.")
+parser.add_argument("--cache_dir", type=str, default="YOUR_CACHE_DIR")
 parser.add_argument("--max_length", type=int, default=4096)
 parser.add_argument("--gradient_accumulation_steps", type=int, default=32)
-parser.add_argument('--emb_forcing', action="store_true")
-parser.add_argument('--lambda_', type=int, default=1)
 parser.add_argument('--max_steps', type=int, default=100)
 parser.add_argument('--save_steps', type=int, default=20)
 parser.add_argument('--lr', type=float, default=5e-5)
@@ -85,7 +84,7 @@ class CustomTrainer(Trainer):
 
 # Model/Data Paths
 model_name = "meta-llama/Llama-2-7b-hf"
-cache_dir = "YOUR_CACHE_DIR"
+cache_dir = args.cache_dir
 
 auth_token = "YOUR_HUGGINGFACE_TOKEN"
 
@@ -170,7 +169,7 @@ data_collator = DataCollatorForSeq2Seq(
     pad_to_multiple_of=8
 )
 
-args.output_dir = f"./results/fine-tuning/YOUR_PATH"
+args.output_dir = f'./results/fine-tuning/{args.dataset}/maxlength{args.max_length}_lr{args.lr}_grad-acc{args.gradient_accumulation_steps}_steps{args.max_steps}_lambda{args.lambda_}_{args.norm}_seed{args.seed}'
 
 # TrainingArguments
 training_args = TrainingArguments(

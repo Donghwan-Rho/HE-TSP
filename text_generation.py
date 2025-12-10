@@ -25,7 +25,7 @@ parser.add_argument(
 )
 parser.add_argument(
     "--model_dir",
-    default="results/fine-tuning/YOUR_FINE-TUNING_PATH",
+    default="YOUR_FINE-TUNING_PATH",
     type=str,
     help="Same string you used in ft_* scripts before ' + seed ' is concatenated.",
 )
