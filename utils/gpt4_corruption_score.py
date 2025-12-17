@@ -118,7 +118,7 @@ def process_response(
         with open(response_path, 'w', encoding='utf-8') as f:
             f.write(results[i-1])
     
-    print(f">>>{i} blocks were Processed.")
+    print(f">>> {i} blocks were Processed.")
 
 def extract_scores(output_file_path, model_name):
     """
