@@ -1,4 +1,4 @@
-# Encryption-friendly LLM Architecture
+# Traveling Salesman-Based Token Ordering Improves Stability in Homomorphically Encrypted Language Models
 This is the repository of our paper [Traveling Salesman-Based Token Ordering Improves Stability in Homomorphically Encrypted Language Models](https://arxiv.org/pdf/2510.12343).
 
 First authors: **Donghwan Rho** (Seoul National University) and **Sieun Seo** (Ewha Womans University) 
